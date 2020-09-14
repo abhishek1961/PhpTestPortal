@@ -1,0 +1,59 @@
+<html>
+ <head>
+  <title> Online Testing</title>
+  
+
+  
+   <link rel="icon" type="image/gif" href="./images/TAlogo.png">
+  <link rel="stylesheet" type="text/css" href="./css/layout.css" />
+  <script type="text/javascript">
+  function settime()
+  {
+	var now=new Date();
+var hour=now.getHours();
+var minute=now.getMinutes();
+var second=now.getSeconds();
+var pp=document.getElementById('pp');
+pp.innerHTML =hour+':'+minute+':'+second ;
+renewtime();
+  }
+ function renewtime()
+ {
+	setTimeout('settime()',1000);
+ }
+  </script>
+  
+ </head>
+ <body onload =settime();>
+     
+  <div id="header">
+   <h1>Online Testing</h1>
+  </div>
+ 
+  <div id="nav">
+   <a  href="http://localhost/Core-test-portal/public/adminlogin.php">Admin Login</a><br/>
+   <a href="http://localhost/Core-test-portal/public/userlogin.php">User Login</a><br/>
+   <a href="http://localhost/Core-test-portal/public/registration.php">New User Registration</a><br/>
+   <!-- <input type="color" id="col">
+   <input type="number" id="num"> -->
+  
+  </div>
+  <div id="section">
+  <h1>Welcome to Online Testing</h1>
+  <p>Online Testing is a platform for students, professionals, job seekers to test
+   their own skillset. Once you are registered with us, you can have enormous number of test
+   papers. These test papers belongs to different subject. You can choose your subject while 
+   appearing for the test.
+  </p>
+  <p>
+   User registration is free. So join now and check your ability. We will give you final score
+   which helps you to understand your level.
+  </p>
+  <p id="pp">time</p>
+  </div>
+   <div id="footer">
+  copyright &copy;||<a href="aboutme.php">Developer-name</a>||2018  
+  </div>
+  
+ </body>
+</html>
